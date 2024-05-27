@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Shop - Home</title>
+  <link rel="stylesheet" href="/BOBS/bootstrap.min.css">
+  <style>
+    h2{
+      font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+      background-color: black;
+    }
+    div1{
+      color: white;
+      display: block;
+      width: 70%;
+      height: 60%;
+      padding: 50px;
+      margin-left: auto;
+      margin-right: auto;
+     }
+    img.logo{
+      display: block;
+      width: 20%;
+      height: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    img.one{
+      opacity: 30%;
+      width: 70%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .home{
+      font-size: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: 4px 4px 4px black;
+      text-align: justify;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .mySlides{
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+    section.article{
+      background-color: rgb(200, 200, 200);
+      width: 100%;
+      text-align: center;
+      padding: 30px;
+
+    }
+    h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border: 20px;
+    }
+    footer.footer{
+      color: white;
+      background-color: black;
+      text-align: center;
+    }
+    section.pic{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Barber Shop Logo" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">Book</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  <section>
+  <img class="mySlides" src="barberpic2.jpeg">
+  <img class="mySlides" src="barberpic.jpg">
+</section>
+<section class="article">
+  <div>
+    <h2>THE OWNER</h2>
+  <p style=" font-family:'Times New Roman', Times, serif ; width: 70%;margin-left: auto; margin-right: auto;" class="desc">"Muhammad Alif Imran Bin Salehuddin, 21y is the owner of Alep Barber Shop. Alep Barbershop is a small business that provides hair cutting services in the Mahallah area at IIUM. As in collaboration with Alep Barber Shop we have agreed to collaborate in making this first version of B.O.B.S succeeded. Alep Barbershop will be the first company to use our system."</p>
+  </div>
+</section>
+    <div1>
+    <p class="home">Welcome To Alep Barber Shop</p>
+  </div1>
+
+
+  <footer class="footer">
+    <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">B.O.B.S</a>
+    </p>
+  </footer>
+</body>
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+  }
+  </script>
+</html>
